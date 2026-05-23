@@ -60,12 +60,14 @@ export default function HomePage() {
               <HeroScene3D />
             </SceneCanvas>
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-              <img
-                src="/logo.png"
-                alt=""
-                className="h-32 w-auto opacity-20 md:h-40"
-                aria-hidden="true"
-              />
+              <div className="flex h-32 w-32 items-center justify-center rounded-full border border-white/5 bg-white/5 p-6 opacity-20 md:h-40 md:w-40">
+                <img
+                  src="/logo.png"
+                  alt=""
+                  className="h-full w-full object-contain"
+                  aria-hidden="true"
+                />
+              </div>
             </div>
           </motion.div>
         </div>

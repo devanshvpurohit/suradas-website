@@ -13,15 +13,21 @@ export default function LoadingScreen({ isLoading }) {
           role="status"
           aria-label="Loading Suradas"
         >
-          <motion.img
-            src="/logo.png"
-            alt="Suradas"
-            className="h-28 w-auto md:h-36"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          />
-          <PreMvpBadge className="mt-6" pulse={false} />
+        <motion.div
+          className="relative flex flex-col items-center justify-center"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="flex h-28 w-28 items-center justify-center overflow-hidden rounded-full border border-white/20 bg-white/5 p-4 shadow-2xl md:h-36 md:w-36">
+            <img
+              src="/logo.png"
+              alt="Suradas"
+              className="h-full w-full object-contain"
+            />
+          </div>
+          <PreMvpBadge className="mt-8" pulse={false} />
+        </motion.div>
           <motion.div
             className="mt-6 h-px w-32 overflow-hidden bg-white/10"
             initial={{ opacity: 0 }}

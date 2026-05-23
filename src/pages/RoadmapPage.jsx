@@ -9,7 +9,7 @@ const phases = [
     phase: 'Phase 1',
     title: 'Pre-MVP',
     status: 'current',
-    period: 'Now — Q3 2025',
+    period: 'Now — Q2 2026',
     items: [
       'Hardware prototype v1',
       'Core vision AI models',
@@ -21,7 +21,7 @@ const phases = [
     phase: 'Phase 2',
     title: 'MVP Beta',
     status: 'upcoming',
-    period: 'Q4 2025',
+    period: 'Q3 — Q4 2026',
     items: [
       'Closed beta with 50+ testers',
       'Mobile companion app alpha',
@@ -33,7 +33,7 @@ const phases = [
     phase: 'Phase 3',
     title: 'Public Launch',
     status: 'upcoming',
-    period: '2026',
+    period: '2027',
     items: [
       'Production hardware',
       'Full feature set rollout',
